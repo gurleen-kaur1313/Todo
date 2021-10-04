@@ -1,5 +1,4 @@
 """todoproject URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
 Examples:
@@ -12,7 +11,13 @@ Class-based views
 Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+
+    admin/
+    todo/
+    addTodo/
+    deleteTodo<int:todo_id>/
 """
+
 from django.contrib import admin
 from django.urls import path
 from todo.views import todoView, addTodo, deleteTodo
